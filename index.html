@@ -1,0 +1,535 @@
+<!DOCTYPE html> <!-- tells a web browser what version of HTML a document is written in. -->
+
+<html lang = "en"> <!-- represents the root of an html document(lang is attribute to identify the language of content on a web page) -->
+  <!--HEAD-->
+  <head> <!-- head section of html document(contains metadata, data about data) -->
+
+    <!--META-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- ensures the IE uses the latest available rendering engin to render a web page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- controls the width and scaling of a web page's viewport so that it's sized correctly on all devices -->
+    <meta charset = "UTF-8"> <!-- (search engines with information about a page content) (Universal Transformation Format 8 bits) possible to use emojis other characters(ASCII)-->
+    <meta name = "author" content = "Jeeva Koghila S"> <!-- Specifies the name of the author of the document -->
+    <meta name = "description" content = "Web Page"> <!-- specifies the description of the webpage-->
+
+    <!--TITLE-->
+    <link rel="icon" href="w3logo.png"><!-- icon apperes in browser's title bar-->
+    <title>Full HTML</title> <!-- title of the document-->
+
+    <!--LINKS-->
+    <link rel="stylesheet" href="styles.css"><!-- exterbal css file link -->
+    <script src="main.js"></script> <!-- External js file link-->
+
+    <style> /* internal css */
+      canvas{
+        border: 1px solid black;
+      }
+    </style>
+
+  </head>
+  <!--BODY-->
+  <body> <!-- main content of the webpage(text, image, link,html elements)-->
+
+    <!--HEADER-->
+    <header><!-- specifies a header for the document or a section-->
+      <nav><!--represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.-->
+        <p id="top"></p>
+        <ul>
+          <li><a href="#header">Header</a></li>
+          <li><a href="#section">Section</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#heading">Heading</a></li>
+          <li><a href="#aside">Aside</a></li>
+          <li><a href="#definition">Definition</a></li>
+          <li><a href="#div">Divider</a></li>
+          <li><a href="#fieldset">Fieldset</a></li>
+          <li><a href="#figure">Figure</a></li>
+          <li><a href="#olul">List</a></li>
+          <li><a href="#pre">Preformatted</a></li>
+          <li><a href="#tabel">Tabel</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#picture">Picture</a></li>
+          <li><a href="#bq">Blockquote</a></li>
+          <li><a href="#dailog">Dailog</a></li>
+          <li><a href="#iframe">Iframe</a></li>
+          <li><a href="#canva">Canvas</a></li>
+          <li><a href="#inline-element">Inline Element</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
+    </header>
+<hr>
+    <!--MAIN-->
+    <main> <!--defines the main content of a document.-->
+      <!--BLOCK ELEMENTS-->
+      
+      <header id="header">
+        <h1>Header</h1>
+        <nav>
+          <img src="w3logo.png" alt="logo" class="logo" width="20" height="20"> Logo
+          <h2>Welcom to My Webpage</h2>
+          <p>Your tagline goes here</p>
+          <ul>
+            <li><a href="#home">Home</a></li><!--from id href is take as #-->
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="nav-right"><a href="#login">Login</a></li><!--used to assign one or more class names to an html element-->
+          </ul>
+        </nav>
+      </header>
+      <a href="#top">Back to top</a><hr>
+
+      <section id="section">
+        <h2>Section</h2>
+        <section id="home"><!-- section of document such as chapters, headers, footers or any other sections-->
+          <h2>Home</h2>
+          <p>Welcome to the home section.</p>
+        </section>
+        <section id="about"><!--specifies a unique id for an html element-->
+          <h2>About</h2>
+          <p>Learn more about us in the about section</p>
+        </section>
+        <section id="services">
+          <h2>Services</h2>
+          <p>Discover our services in this section</p>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Get in touch through the contact section.</p>
+        </section>
+        <section id="login">
+          <h2>Login</h2>
+          <p>Login to access Your account.</p>
+        </section>
+      </section>
+      <a href="#top">Back to top</a><hr>
+
+        <section id="article">
+          <h2>Article</h2>
+            <article><!--a semantic element that specifies independent, self-contained content -->
+                <h2>First Blog Post</h2>
+                <p>Published on <time datetime="2024-08-01">August 1, 2024</time> by <a href="#author1">Jeeva</a></p>
+                <p>This is the content of the first blog post. It contans information, nsights and intresting facts.</p>
+                <p>Filed under: <a href="#category1">Techonology</a></p>
+            </article>
+            <article>
+                <h2>Second Blog Post</h2>
+                <p>Published on <time datetime="2024-08-02">August 2, 2024</time> by <a href="#author1">Koghila</a></p>
+                <p>This is the content of the second blog post. It contans information, nsights and intresting facts.</p>
+                <p>Filed under: <a href="#category2">Science</a></p>
+            </article>
+        </section>
+        <a href="#top">Back to top</a><hr>
+
+        <section id="heading">
+          <!--<h1>Heading 1</h1>--><!--heading and sub-headings on web page-->
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </section>
+        <a href="#top">Back to top</a><hr>
+
+        
+        <div id="aside">
+           <!-- only h2 - h6 is included for aside -->
+             <aside><!--some content aside from thge content it is placed in-->       
+                <details><!--additional details that the user can open and close on demand-->
+                  <summary>About Me</summary><!--visble heading for the detail element-->
+                  <p>Hi, I'm a blogger who writes about techonology and science. Follow me on social media for more updates!</p>
+                </details>
+                <details>
+                  <summary>Related Links</summary>
+                  <a href="#">Intresting article 1</a>
+                  <a href="#">Intresting article 2</a>
+                  <a href="#">Intresting article 3</a>
+                </details>
+                <details>
+                  <summary>Advertisement</summary>
+                  <p><a href="#">Chech out amazing prouct!</a></p>
+                </details>
+             </aside>
+            </div>
+        <a href="#top">Back to top</a><hr>
+
+        <div id="definition">
+          <h1>Definition</h1>
+        <dl><!--definition list-->
+            <dt>HTML</dt><!--title-->
+            <dd>HyperText Markup Language, the standard language for creating web pages</dd><!--definition-->
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets, used to describe the presentation of a document written in HTML</dd>
+            <dt>JS</dt>
+            <dd>JavaScript, A programming language commonly used to create interactive effects within web browsers.</dd>
+        </dl></div>
+        <a href="#top">Back to top</a><hr>
+        
+        <div id="div"><!--a container that group similar content togrther on a web page-->
+          <h1>Divider</h1>
+          <div>
+            <div>This is divider</div>
+            <div>This is also a divider</div>
+          </div>
+        </div>
+        <a href="#top">Back to top</a><hr>
+        
+
+        <h1>This is Fieldset</h1>
+        <fieldset id="fieldset"><!--used to group related elements in a form, tag drawa a box around the related element-->
+          <legend>This is Legend</legend><!--add a caption or title to a group of related from elements-->
+          <form action="/submit" method="post"><!--required when you want to collect information that visitors provide.-->
+            <!--label specify a title of the tag-->
+            <!--input specifies an input fields where the user can enter data-->
+            <label for="textValue">Text:</label>
+            <input type="text" name="textValue" id="textValue" placeholder="Enter text" required><br><br>
+
+            <label for="emailId">Email:</label>
+            <input type= "email" name="emailId" id="emailId" placeholder="Enter email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%&*])[A-Za-z\d!@#$%&*].{8.}$" title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character."><br><br>
+
+            <label for="number1">Number:</label>
+            <input type="tel" name="number" id="number1" placeholder="Enter number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"><br><br>
+
+            <label for="number">Selected Number:</label>
+            <input type="number" name="number" id="number" min="18" max="35" value="18"><br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time"><br><br>
+
+            <label for="week">Week and Year:</label>
+            <input type="week" name="week" id="week"><br><br>
+
+            <label for="month">Month and Year:</label>
+            <input type="month" name="month" id="month"><br><br>
+
+            <label for="date">Day and Month and Year:</label>
+            <input type="date" name="date" id="date"> <br><br>
+
+            <label for="datetime-local">Day and Month and Year and Time:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local"><br><br>
+
+            Radio:
+            <input type="radio" id="option1" name="radio" value="option1">
+            <label for="option1">Option 1</label>
+            <input type="radio" id="option2" name="radio" value="option2">
+            <label for="option2">Option 2</label>
+            <input type="radio" id="option3" name="radio" value="option3">
+            <label for="option3">Option 3</label><br><br>
+
+            <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1">
+            <label for="checkbox1">Checkbox1</label><br>
+            <input type="checkbox" name="checkbox2" id="checkbox2" value="checkbox2">
+            <label for="checkbox2">Checkbox2</label><br>
+            <input type="checkbox" name="checkbox3" id="checkbox3" value="checkbox3">
+            <label for="checkbox3">Checkbox3</label><br>
+            <input type="checkbox" name="checkbox4" id="checkbox4" value="checkbox4">
+            <label for="checkbox4">Checkbox4</label><br><br>
+
+            <select name="optionvalue" id="optionvalue" title="options"><!-- multiple size="1" -->
+              <optgroup label="first">
+                <option value="option1">Option 1</option>
+                <option value="option2" selected>Option 2</option>
+                <option value="option3">Option 3</option>
+              </optgroup>
+              <optgroup label="second">
+                <option value="option4">Option 4</option>
+                <option value="option5">Option 5</option>
+              </optgroup>
+              <optgroup label="third">
+                <option value="option6">Option 6</option>
+                <option value="option7">Option 7</option>
+                <option value="option8">Option 8</option>
+              </optgroup>
+            </select><br><br>
+
+            <label for="browser">Browsers</label>
+            <input list="browsers" id="browser"  name="browser" placeholder="Enter browsers">
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Safari">
+            </datalist><br><br>
+
+            <label for="website">URL:</label>
+            <input type="url" name="website" id="website" placeholder="Enter your URL" required><br><br>
+
+            <label for="rangeValue">Range:</label>
+            <input type="range" name="rangeValue" id="rangeValue" min="0" max="100" step="1" value="50">
+            <span id="range-value">50</span><br><br>
+
+            <label for="colorPicker">Color:</label>
+            <input type="color" name="colorPicker" id="colorPicker"><br><br>
+
+            <label for="fileUplode">File:</label>
+            <input type="file" name="fileUplode" id="fileUplode"><br><br>
+
+            <label for="textarea">Textarea:</label>
+            <textarea name="textarea" id="textarea"></textarea><br><br>
+
+            <label for="search">Search:</label>
+            <input type="search" name="search" id="search" placeholder="search..." required><br><br>
+
+            <label for="image1">Image buttom:</label>
+            <input type="image"  name="image" id="image1" src="bandmember.png" alt="Submit Form" title="Submit Form" width="50" height="50"><br><br>
+
+            <input type="submit" value="Submit">
+
+            <input type="reset" value="Reset">
+
+            <input type="button" value="Click Me" onclick="alert('Button clicked')">
+            
+            <button type="submit">Submit</button>
+            
+            <button type="button">Button</button><br><br>
+            
+            <!-- <label for="hidden">Hidden</label>
+            <input type="hidden" name="hidden" id="hidden" value="12345"> -->
+
+          </form>
+        </fieldset>
+        <a href="#top">Back to top</a><hr>
+
+
+        <figure id="figure"><!--self-contained content, potentially with an optional caption-->
+          <img src="bandmember.png" alt="This is Image"><!--used to embed an image in a web page.-->
+          <figcaption>Fig.1 - This is Caption for the image</figcaption><!--defines a caption for figure element-->
+        </figure>
+        <a href="#top">Back to top</a><hr>
+
+        <div id="olul">          
+          <h1>Ordered List & Unordered List</h1>
+        <ol><!--ordered list 1,A,a,i,I-->
+          <li>This is Ordered List</li><!--list-->
+          <li>This is Ordered List</li>
+          <li>This is Ordered List</li>
+        </ol>
+        <ul><!--unordered list dot, square etc-->
+          <li>This is Unorderd List</li>
+          <li>This is Unorderd List</li>
+          <li>This is Unorderd List</li>
+        </ul></div>
+        <a href="#top">Back to top</a><hr>
+
+        <h1 id="pre">Preformatted</h1>
+        <pre>This is 
+          Preformatted text.
+        </pre><!--preformatted-->
+        <a href="#top">Back to top</a><hr>
+        
+        <!--TABLE-->
+        <h1 id="tabel">Tabel</h1>
+        <table>
+          <caption>Tabel Caption</caption>
+          <thead>
+            <tr><!--table row-->
+              <th scope="col">This is Table Head1</th><!--table head-->
+              <th scope="col">This is Table Head2</th>
+              <th scope="col">This is Table Head3</th>
+              <th scope="col">This is Table Head4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">This is Table Head1</th><!--table side head-->
+              <td>This is Table Data1</td><!--table data-->
+              <td>This is Table Data2</td>
+              <td>This is Table Data3</td>
+            </tr>
+            <tr>
+              <th scope="row">This is Table Head2</th>
+              <td colspan="2">This is Table Data1 this is colspan</td>
+              <td>This is Table Data2</td>
+            </tr>
+            <tr>
+              <th rowspan="2" scope="row">This is Table Head3 this is rowspan</th>
+              <td>This is Table Data1</td>
+              <td>This is Table Data2</td>
+              <td>This is Table Data3</td>
+            </tr>
+            <tr>
+              <td>This is Table Data1</td>
+              <td>This is Table Data2</td>
+              <td>This is Table Data3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">This is Table Head4</th>
+              <td>This is Table Data1</td>
+              <td>This is Table Data2</td>
+              <td>This is Table Data3</td>
+            </tr>
+          </tfoot>
+        </table>
+        <a href="#top">Back to top</a><hr>
+
+        <!--VIDEO-->
+        <h1 id="video">Video</h1>
+        <video width="400" height="250" controls>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <a href="#top">Back to top</a><hr>
+
+        <!-- Audio -->
+        <h1 id="audio">Audio</h1>
+        <audio controls>
+          <source src="video.mp4" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+        <a href="#top">Back to top</a><hr>
+
+        <!-- IMAGE -->
+         <h2 id="image">IMAGE</h2>
+         <img src="bandmember.png" alt="image" usemap="#imagemap">
+         <map name="imagemap">
+          <area shape="rect" coords="34,44,270,350" href="https://example.com/page1" alt="Link 1">
+          <area shape="circle" coords="150,150,150" href="https://example.com/page2" alt="Link 2">
+          <area shape="poly" coords="290,172,333,250,250,250" href="https://example.com/page3" alt="Link 3">
+         </map>
+         <a href="#top">Back to top</a><hr>
+
+         <!-- Picture -->
+          <h1 id="picture">Picture</h1>
+          <picture>
+              <!--high resolution display-->
+              <source srcset="feather.jfif" media="(min-resolution:2dppx)">
+              <!-- smaller screens-->
+              <source srcset="girl_photo.jfif" media="(max-width:600px)">
+              <!-- default image-->
+              <img src="home.jfif" alt="img">
+          </picture>
+          <a href="#top">Back to top</a><hr>
+
+          <h1 id="bq">Blockquote</h1>
+        <blockquote id="blockquotes" cite="https://www.goodreads.com/quotes/28902-i-ve-learned-that-people-will-forget-what-you-said-people-will"><!--quoted from another source-->
+          <p>"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel."</p>
+      </blockquote>
+      <a href="#top">Back to top</a><hr> 
+
+      <h1 id="dailog">Dailog</h1>
+      <dialog open>
+        <p>This is dialog box.</p>
+        <button onclick="this.closest('dialog').close()">Close</button>
+      </dialog> 
+      <a href="#top">Back to top</a><hr>
+
+      <h1 id="noscript">Noscript</h1>
+      <noscript>
+        <p>JavaScript is not enabled in your browser. Some features may not work as expected.</p>
+      </noscript>
+      <a href="#top">Back to top</a><hr>
+
+      <h1 id="iframe">Iframe</h1>
+      <iframe src="bandmember.png" width="600" height="400"  title="example website">
+      </iframe>
+      <a href="#top">Back to top</a><hr>
+
+      <h2 id="canva">Canvas</h2>
+      <canvas id="can" width="100" height="100">This is canvas</canvas><!--used to create a fixed-size drawing surface on a web page that can be used toi generte graphics instantly--> 
+      <a href="#top">Back to top</a><hr>
+
+       <!--INLINE ELEMENTS-->
+       <h2 id="inline-element">Inline Element</h2>
+          <a href="www.google.com" target="_blank">This is Link</a><br><br>
+          <a href="www.google.com" target="_parent">This is Link</a><br><br>
+          <a href="www.google.com" target="_self">This is Link</a><br><br>
+          <a href="www.google.com" target="_top">This is Link</a><br><br>
+          <span>Span</span><br><br>
+          <strong>Strong</strong><br><br>
+          <abbr title="Abbreviation">Abbr</abbr><br><br>
+          <b>Bold</b><br><br>
+          <i>italic</i><br><br>
+          <em>emphasized</em><br><br>
+          <bdo dir="rtl">Bi-directional Override right to left</bdo><br><br>
+          <bdo dir="ltr">Bi-directional Override left to right</bdo><br><br>
+          <cite>citation</cite><br><br>
+          <code>Computer code</code><br><br>
+          <dfn>definition trem</dfn><br><br>
+          <img src="bandmember.png" alt="image" width="20" height="20"><br><br>
+          <label for="some">label</label><br><br>
+          <input type="text" id="some" placeholder="input"><br><br>
+          <kbd>keyboard input</kbd><br><br>
+          &nbsp; &nbsp; &nbsp; &nbsp; non breaking space <br><br>
+          &lt; lessthan <br><br>
+          &gt; greaterthan <br><br>
+          &copy; copyright <br><br>
+          &reg; registered trademark <br> <br>
+          &trade; Trademark <br> <br>
+          &deg; degree <br><br>
+          &sect; Section <br><br>
+          &bull; bullet<br><br>
+          &para; pragraph<br><br>
+          &larr; left arrow <br><br>
+          &rarr; right arrow <br><br>
+          &uarr; up arrow<br><br>
+          &darr; down arrow<br><br>
+          &infin; infinite<br><br>
+          &pi; pi <br><br>
+          &Sigma; Sigma<br><br>
+          &Omega; Omega <br><br>
+          &pound; pound <br><br>
+          &yen; yen<br><br>
+          &micro; micro<br><br>
+          &#8377; rupee<br><br>
+          <map name="map">Image Map</map><br><br>
+          <mark>Mark</mark><br><br>
+          <q>short quotation</q><br><br>
+          <samp>Sample output</samp><br><br>
+          <sub>Subscript</sub><br><br>
+          <sup>superscript</sup><br><br>
+          <textarea placeholder="textarea"></textarea><br><br>
+          <time datetime="2024-08-03">Augest 3, 2024</time><br><br>
+          <time datetime="10:00">10:00</time><br><br>
+          <u>Underline</u><br><br>
+          <var>Variable</var><br>break,<a href="#top">Back to top</a> <br> hrizontal line.<hr>
+    </main>
+    
+
+    <!--FOOTER-->
+    <h1 id="footer">Footer</h1>
+    <footer><!--defines a footer of the web page-->
+      <address id="address"><!--persons or organization contact information-->
+        Address
+          <p>
+            <strong>My Company</strong>
+          </p>
+          <p>123 Main Street</p>
+          <p>Hometown, HT 12345</p>
+          <p>Email: 
+            <a href="mailto:info@mycompany.com">info@mycompany.com</a>
+          </p>
+          <p>Phone: 
+            <a href="tel:+11234567890">+1 (123) 456-7890</a>
+          </p>
+          <p>Facebook:
+            <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener">Facebook</a>
+          </p>
+          <p>Twitter:
+            <a href="https://www.twitter.com/yourprofile" target="_blank" rel="noopener">Twitter</a>
+          </p>
+          <p>Linkedin:
+            <a href="https://www.linkedin.com/yourprofile" target="_blank" rel="noopener">Linkedin</a>
+          </p>
+          <p>Github:
+            <a href="https://github.com/yourprofile" target="_blank" rel="noopener">Github</a>
+          </p>
+          <p>Instagram:
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener">Instagram</a>
+          </p>
+          <p>Whatsapp:
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener">Whatsapp</a>
+          </p><br>
+          <a href="#top">Back to top</a><hr>
+          <p> &copy; 2024 Your Company. All right reserved.</p>
+      </address>
+    </footer>
+
+
+  </body>
+
+</html>
